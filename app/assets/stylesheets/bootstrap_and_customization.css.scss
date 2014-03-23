@@ -1,5 +1,27 @@
-$body-bg: #c9a0dc;
+@import url(http://fonts.googleapis.com/css?family=Domine:400,700);
+@import url(http://fonts.googleapis.com/css?family=Miniver);
 
+$body-bg: turquoise; /*#ee3233; /*#e6192c; #ff7619;*/
+$font-family-sans-serif: 'Miniver', 'Domine', Arial, sans-serif;
+$btn-primary-bg: turquoise;
+$navbar-height: 75px;
+$jumbotron-color: #ee3233;
+$navbar-default-brand-color: #ee3233;
 
 @import 'bootstrap';
 
+p {
+    color: black; 
+}
+
+.btn-primary {
+    font-family: 'Domine';
+}
+
+.center {
+    text-align: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
