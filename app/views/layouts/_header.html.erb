@@ -10,7 +10,7 @@
 	<span class="icon-bar"></span>
 	<span class="icon-bar"></span>
       </button>
-      <%= link_to "Pintrance", root_path, class: "navbar-brand" %>
+      <%= link_to "PinTrance", root_path, class: "navbar-brand" %>
     </div>
     
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -26,6 +26,7 @@
 	<% end %>
 	<li><%= link_to "Contact", contact_path %></li>
 	<% if user_signed_in? %>
+	  <li><%= link_to "Pins", pins_path %></li>
           <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
 	<% else %>
 	  <li><%= link_to "Log In", new_user_session_path %></li>
