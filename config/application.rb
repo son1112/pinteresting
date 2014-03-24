@@ -19,6 +19,13 @@ module Pinteresting
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-    config.assets.initialize_on_precompile = true
+
+    # added the following to fix an issue with css rendering
+    # later, devise advised changing to false if deploying to Heroku
+    # using Rails 3.2
+    # if css stops working again on site, will switch back and
+    # trouble-shoot from there
+    # config.assets.initialize_on_precompile = true
+    config.assets.initialize_on_precompile = false
   end
 end
