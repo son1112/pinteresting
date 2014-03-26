@@ -1,11 +1,14 @@
 <div class="panel panel-default">
   <div class="panel-heading">
+
     <h1 class="center">Pins</h1>
+
     <div class="container">
       <% if user_signed_in? %>
 	<%= link_to 'New Pin', new_pin_path, class: "btn btn-primary" %>
       <% end %>
     </div>
+
   </div>
 
   <div class="panel-body">
@@ -33,13 +36,17 @@
       </tbody>
     </table>
   </div>
+
   <br>
+
   <div class="panel-footer">
+
     <div class="container">
       <% if user_signed_in? %>
 	<%= link_to 'New Pin', new_pin_path, class: "btn btn-primary" %>
       <% end %>
     </div>
+
   </div>
 </div>
 
