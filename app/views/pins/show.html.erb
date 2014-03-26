@@ -1,9 +1,18 @@
 <!-- <p id="notice"><%= notice %></p> -->
 
-<p>
-  <strong>Description:</strong>
-  <%= @pin.description %>
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2><strong>Description:</strong></h2>
+  </div>
+  <div class="shout container center">
+    <%= @pin.description %>
+  </div>
 
-<%= link_to 'Edit', edit_pin_path(@pin) %> |
-<%= link_to 'Pins', pins_path %>
+  <div class="panel-footer">
+    <% if @pin.user == current_user %>
+      <%= link_to 'Edit', edit_pin_path(@pin) %> | 
+    <% end %>
+    <%= link_to 'Pins', pins_path %>
+  </div>
+</div>
+
