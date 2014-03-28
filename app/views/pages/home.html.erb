@@ -4,7 +4,11 @@
   <% if user_signed_in? %>
     
     <div class="center">
-      <%= image_tag Pin.last.image.url(:medium), class: "img-frame" %>
+      <%= image_tag Pin.last.image.url, class: "img-frame" %>
+      <div class="shout">
+	<%= Pin.last.description %>
+      </div>
+      <br/>
     </div>
 
    <%= link_to "New Pin", new_pin_path, class: "btn btn-primary btn-lg" %>      
