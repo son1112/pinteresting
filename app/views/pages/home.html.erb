@@ -2,7 +2,11 @@
   <h1>Welcome to PinTrance!</h1>
   <br/>
   <% if user_signed_in? %>
- 
+    
+    <div class="center">
+      <%= image_tag Pin.last.image.url(:medium), class: "img-frame" %>
+    </div>
+
    <%= link_to "New Pin", new_pin_path, class: "btn btn-primary btn-lg" %>      
   <% else %>
   <p>
