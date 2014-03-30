@@ -15,23 +15,23 @@
     <table>
       <thead>
 	<tr>
-	  <th>Image</th>
-	  <th>Description</th>
-	  <th>User</th>
+	  <th></th>
+	  <th></th>
+	  <th></th>
 	  <th></th>
 	</tr>
       </thead>
 
       <tbody>
-	<% @pins.each do |pin| %>
+	<% @pins.reverse.each do |pin| %>
 	  <tr>
-	    <td><%= image_tag pin.image.url(:thumb) %></td>
-            <td><%= pin.description %></td>
-            <td><%= pin.user.email if pin.user %></td>
-	      <td><%= link_to 'Show', pin %></td>
+	    <td><%= image_tag pin.image.url(:thumb) if pin.image.url != "/images/original/missing.png" %></td>
+            <td><div class="shout-curs"><%= pin.user.email[/^\w+/] if pin.user %> says:</div></td>
+            <td><div class="shout", style="word-wrap: break-word; width: 400px"><%= pin.description %></div></td>
+	    <td><%= link_to 'Show', pin, class: "btn btn-primary" %></td>
 	    <% if pin.user == current_user %>
-	      <td><%= link_to 'Edit', edit_pin_path(pin) %></td>
-	      <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	      <td><%= link_to 'Edit', edit_pin_path(pin), class: "btn btn-primary" %></td>
+	      <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary" %></td>
 	    <% end %>
 	  </tr>
 	<% end %>

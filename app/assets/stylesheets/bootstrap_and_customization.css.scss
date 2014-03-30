@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Miniver);
 @import url(http://fonts.googleapis.com/css?family=ABeeZee:400,400italic);
 
-$body-bg: #bdc3c7;
+$body-bg: #f72da3;/*#bdc3c7;*/
 $font-family-sans-serif: 'Miniver', Arial, sans-serif;
 $btn-primary-bg: turquoise;
 $navbar-height: 75px;
@@ -39,6 +39,7 @@ th,td {
 
 .field {
     font-family: 'Domine';
+    font-size: 20px;
 }
 
 .actions {
@@ -46,7 +47,13 @@ th,td {
 }
     
 .shout {
+    font-family: 'Domine';
+    font-weight: bold;
+    font-size: 30px;
+}
 
+.shout-curs {
+    font-family: 'Miniver';
     font-weight: bold;
     font-size: 30px;
 }
@@ -56,4 +63,6 @@ th,td {
     border-style: solid;
     width: 100%;
 }
+
+
 
