@@ -1,7 +1,7 @@
 <div class="panel panel-default">
   <div class="panel-heading">
     <div class="center">
-      <%= image_tag @pin.image.url(:medium) %>
+      <%= image_tag @pin.image.url(:medium) if @pin.image.url != "/images/original/missing.png" %>
     </div>
     <br/>
   </div>

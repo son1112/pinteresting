@@ -4,19 +4,19 @@
   <% if user_signed_in? %>
     
     <div class="center">
-      <%= image_tag Pin.last.image.url, class: "img-frame" %>
+      <%= image_tag Pin.last.image.url, class: "img-frame" if Pin.last.image.url != "/images/original/missing.png" %>
       <div class="shout">
 	<%= Pin.last.description %>
       </div>
       <br/>
     </div>
 
-   <%= link_to "New Pin", new_pin_path, class: "btn btn-primary btn-lg" %>      
+    <%= link_to "New Pin", new_pin_path, class: "btn btn-primary btn-lg" %>      
   <% else %>
-  <p>
-    <%= link_to "Log In", new_user_session_path, class: "btn btn-primary btn-lg" %>  
-    <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-  </p>
+    <p>
+      <%= link_to "Log In", new_user_session_path, class: "btn btn-primary btn-lg" %>  
+      <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+    </p>
   <% end %>
 
 
