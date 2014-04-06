@@ -2,14 +2,14 @@
 @import url(http://fonts.googleapis.com/css?family=Miniver);
 @import url(http://fonts.googleapis.com/css?family=ABeeZee:400,400italic);
 
-$body-bg: #f72da3;/*#bdc3c7;*/
+/*$body-bg: #f72da3;/*#bdc3c7;*/
 $font-family-sans-serif: 'Miniver', Arial, sans-serif;
 $btn-primary-bg: turquoise;
 $navbar-height: 75px;
 $navbar-default-brand-color: #ee3233;
 $jumbotron-color: #f72da3;
 $jumbotron-padding: 6em;
-$panel-body-padding: 4em;
+$panel-default-padding: 4em;
 
 
 @import 'bootstrap';
