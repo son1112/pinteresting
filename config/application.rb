@@ -26,6 +26,6 @@ module Pinteresting
     # if css stops working again on site, will switch back and
     # trouble-shoot from there
     # config.assets.initialize_on_precompile = true
-    config.assets.initialize_on_precompile = false
+    config.assets.initialize_on_precompile = true
   end
 end
