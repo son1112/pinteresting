@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
 <meta name="title" content="README"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2014-04-13T04:49+0000"/>
+<meta name="generated" content="2014-04-13T04:44+0000"/>
 <meta name="author" content="Ander"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -133,17 +133,12 @@ for the JavaScript code in this tag.
 
 
 <p>
-This is the pinteresting sample application for <a href="http://onemonthrails.com"><b>One Month Rails</b></a>, 
-by <a href="http://mattangriffel.com">Mattan Griffel</a>.
+This is the pinteresting sample application for
+<a href="http://onemonthrails.com">*One Month Rails</a>
 </p>
 <p>
-I began calling it PinTrance, poking fun at the trance-like state
-that my wife would be in, staring at her phone all night, looking 
-through pins on Pinterest. Eventually, this application will
-have trance-inducing features as well. For now, it's just a fun
-exploration project for me to learn Ruby on Rails.
-</p>
-</div>
+by <a href="http://mattangriffel.com">Mattan Griffel</a>
+</p></div>
 </div>
 </div>
 
