@@ -22,6 +22,7 @@ gem 'mailcatcher'
 group :development, :test do
   gem 'sqlite3'	    
   gem 'foreman'
+  gem 'mailcatcher'
 end
 
 group :production do
