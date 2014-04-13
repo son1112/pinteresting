@@ -9,3 +9,6 @@ through pins on Pinterest. Eventually, this application will
 have trance-inducing features as well. For now, it's just a fun
 exploration project for me to learn Ruby on Rails.
 
+* Notes
+
+https://github.com/plataformatec/devise/wiki/How-To:-Add-:confirmable-to-Users

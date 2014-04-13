@@ -1,9 +1,6 @@
-<p>Welcome to PinTrance, <%= @user.name %>!</p>
+
+<p>Welcome <%= @email %>!</p>
 
 <p>You can confirm your account email through the link below:</p>
 
 <p><%= link_to 'Confirm my account', confirmation_url(@resource, :confirmation_token => @token) %></p>
-
-<p>Enjoy!</p>
-
-<a href="http://www.pintrance.com"></a>
