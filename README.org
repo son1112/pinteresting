@@ -1,6 +1,6 @@
 * One Month Rails
 
-This is the pinteresting sample application for [[http://onemonthrails.com][*One Month Rails*]], 
+This is the pinteresting sample application for [[http://onemonthrails.com][One Month Rails]], 
 by [[http://mattangriffel.com][Mattan Griffel]].
 
 I began calling it PinTrance, poking fun at the trance-like state

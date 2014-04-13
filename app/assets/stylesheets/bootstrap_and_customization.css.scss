@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Miniver);
 @import url(http://fonts.googleapis.com/css?family=ABeeZee:400,400italic);
 
-$body-bg: #bdc3c7;
+$body-bg: #dae9f2;
 $font-family-sans-serif: 'Miniver', Arial, sans-serif;
 $btn-primary-bg: turquoise;
 $navbar-height: 75px;
@@ -19,6 +19,13 @@ $link-color: #ee3233;
 
 .tempfix {
     margin-top: 7em;
+}
+
+
+/*EXPerimentation*/
+
+.custom-box-styles {
+    border-radius: 8px;
 }
 
 /*NAVigation*/
